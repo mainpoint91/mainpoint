@@ -87,7 +87,7 @@ foreach ($output as $line) {
         $found3 = true;
 
     }
-    if (stripos(strtolower($line), 'DiscordSetup.exe') !== false) {
+    if (stripos(strtolower($line), 'discordsetup.exe') !== false) {
         $found4 = true;
 
     }
